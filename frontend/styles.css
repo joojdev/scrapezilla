@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+html, body {
+  height: 100%;
+}
+
+#blocklyDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.topBar {
+  padding: 15px;
+}
+
+.sidePanel {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 30px 10px;
+  border-right: 1px solid rgb(179, 179, 179);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+#projects > li {
+  transition: .1s;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px dashed #333;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: true;
+}
+
+#projects > li:hover {
+  transform: translateX(5px);
+  color: #444444;
+}
+
+#newProjectButton {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .15s;
+}
+
+#newProjectButton:hover {
+
+}
+
+#newProjectButton:active {
+  transform: translateY(5px);
+}
+
+.selected {
+  border: 1px #333 solid !important;
+}
