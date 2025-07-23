@@ -1,3 +1,4 @@
 eel
 pyinstaller
 selenium
+peewee

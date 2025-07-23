@@ -8,17 +8,38 @@
 </head>
 <body>
   <div class="container">
+
     <div class="sidePanel">
       <h1>Scrapezilla</h1>
+
       <button id="newProjectButton">New project</button>
+
       <ul id="projects"></ul>
     </div>
+
     <div class="content">
+
       <div class="topBar">
-        <h2 id="projectName"></h2>
+        <h2 id="projectName">nome do script</h2>
       </div>
+
       <div id="blocklyDiv"></div>
+
     </div>
+
+  </div>
+
+  <div id="blackScreen" class="hidden">
+    <form id="projectNameForm" class="hidden">
+      <div class="formGroup">
+        <label for="projectNameInput">Project name</label>
+        <input type="text" id="projectNameInput" required autocomplete="off">
+      </div>
+      <div class="buttonGroup">
+        <button type="button" id="cancelProjectNameFormButton">Cancel</button>
+        <button type="submit">Create</button>
+      </div>
+    </form>
   </div>
 
   <script src="/eel.js"></script>
