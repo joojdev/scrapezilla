@@ -42,25 +42,32 @@ html, body {
 #projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   list-style-type: none;
+  width: 100%;
 }
 
 #projects > li {
-  transition: .1s;
+  transition: .05s;
   cursor: pointer;
-  padding: 5px 10px;
-  border: 1px dashed #333;
-  border-radius: 30px;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #999;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: true;
+  text-align: center;
+  user-select: none;
 }
 
 #projects > li:hover {
-  transform: scale(1.1);
-  color: #444444;
+  transform: scale(1.05);
+}
+
+#projects > li:active {
+  transform: scale(0.95);
 }
 
 #newProjectButton {
@@ -69,14 +76,12 @@ html, body {
   border-radius: 10px;
   cursor: pointer;
   transition: .15s;
-}
-
-#newProjectButton:hover {
-
+  width: 100%;
+  font-size: 1.1em;
 }
 
 .selected {
-  border: 1px #333 solid !important;
+  font-weight: bold;
 }
 
 #blackScreen {
@@ -105,6 +110,7 @@ form#projectNameForm {
   margin: 15px;
   border-radius: 15px;
   gap: 10px;
+  box-shadow: 0 4px 10px #33333350;
 }
 
 .formGroup {
